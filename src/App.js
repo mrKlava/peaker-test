@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useEffect, useState } from "react"
+import { Map, Side } from "./components"
+
+import { data } from "./assets/data/data"
+
+export const DestinationContext = createContext({
+  destinations: [],
+  display: [],
+  hovered: {},
+  setDisplay: () => {},
+  setHovered: () => {},
+})
+
 
 function App() {
+
+  const [display, setDisplay] = useState([])
+  const [hovered, setHovered] = useState(null)
+  const destinations = data
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main">
+      <DestinationContext.Provider value={{destinations, display, hovered, setDisplay, setHovered}} >
+        <Side />
+        <Map />
+      </DestinationContext.Provider>
+    </main>
   );
 }
 

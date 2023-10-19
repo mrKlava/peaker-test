@@ -1,0 +1,12 @@
+@use "/src/assets/styles/variables" as *;
+
+.side {
+  background-color: gray;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 600px;
+  max-width: 600px;
+  height: 100vh;
+}
