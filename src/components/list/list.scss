@@ -27,9 +27,16 @@
     // height: 200px;
 
     background-color: $bg-menu-item;
-    border: 1px solid $bg-menu-item;
+    border-radius: .5rem;
 
     padding: 1rem;
+
+    transition: background-color .1s linear, border-radius .1s linear;
+
+    &.selected {
+      border-radius: 1rem;
+      background-color: $bg-menu-item-hover;
+    }
 
     &_title {
       font-family: $font-text;

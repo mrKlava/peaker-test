@@ -1,4 +1,9 @@
 export const data = [
+
+  /* ==============================================================================================
+  ==========================================   HIGHEST   ==========================================
+  ============================================================================================== */
+
   {
     id:           1,
     latLng:       [42.838611, -0.29],
@@ -7,7 +12,8 @@ export const data = [
     zone:         1,
     name:	        "Pic du Balaïtous",
     img:          "1.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           2,
@@ -17,7 +23,8 @@ export const data = [
     zone:         2,
     name:	        "Pic de Vignemale",
     img:          "2.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           3,
@@ -27,7 +34,8 @@ export const data = [
     zone:         3,
     name:	        "Monte Perdido",
     img:          "3.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           4,
@@ -37,7 +45,8 @@ export const data = [
     zone:         4,
     name:	        "Pic de la Munia",
     img:          "4.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           5,
@@ -47,7 +56,8 @@ export const data = [
     zone:         5,
     name:	        "Pic de Néouvielle",
     img:          "5.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           6,
@@ -57,7 +67,8 @@ export const data = [
     zone:         6,
     name:	        "Pic Schrader",
     img:          "6.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           7,
@@ -67,7 +78,8 @@ export const data = [
     zone:         7,
     name:	        "Pico Posets",
     img:          "7.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           8,
@@ -77,7 +89,8 @@ export const data = [
     zone:         8,
     name:	        "Perdiguero",
     img:          "8.jpg",
-    difficulty:   1
+    difficulty:   1,
+    main:         true
   },
   {
     id:           9,
@@ -87,6 +100,102 @@ export const data = [
     zone:         9,
     name:	        "Aneto",
     img:          "9.jpg",
+    difficulty:   1,
+    main:         true
+  },
+
+  /* ==============================================================================================
+  ===========================================   ZONE 2   ==========================================
+  ============================================================================================== */
+  {
+    id:           10,
+    latLng:       [42.773056, -0.149722],
+    altitude:     3289,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Clot de la Hount",
+    img:          "10.jpg",
     difficulty:   1
   },
+  {
+    id:           11,
+    latLng:       [42.769167, -0.149722],
+    altitude:     3247,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Cerbillona",
+    img:          "11.jpg",
+    difficulty:   1
+  },
+  {
+    id:           12,
+    latLng:       [42.768611, -0.145556],
+    altitude:     3235,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Pic central (Vignemal)",
+    img:          "12.jpg",
+    difficulty:   1
+  },
+  {
+    id:           13,
+    latLng:       [42.766944, -0.138333],
+    altitude:     3219,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Pic de Montferrat",
+    img:          "13.jpg",
+    difficulty:   1
+  },
+  {
+    id:           14,
+    latLng:       [42.773611, -0.141667],
+    altitude:     3204,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Pointe Chausenque",
+    img:          "14.jpg",
+    difficulty:   1
+  },
+  {
+    id:           15,
+    latLng:       [42.773333, -0.144444],
+    altitude:     3197,
+    region:       ['fr', 'es'],
+    zone:         2,
+    name:	        "Piton Carré",
+    img:          "15.jpg",
+    difficulty:   1
+  },
+  {
+    id:           16,
+    latLng:       [42.78680210996128, -0.12025208466048305],
+    altitude:     2520,
+    region:       ['fr'],
+    zone:         2,
+    name:	        "Pic de la Sède",
+    img:          "16.jpg",
+    difficulty:   1
+  },
+  {
+    id:           17,
+    latLng:       [42.78440215382502, -0.11485423805565263],
+    altitude:     2719,
+    region:       ['fr'],
+    zone:         2,
+    name:	        "Col de Labas",
+    img:          "17.jpg",
+    difficulty:   1
+  },
+  {
+    id:           18,
+    latLng:       [42.783292131394155, -0.10835616932096609],
+    altitude:     2719,
+    region:       ['fr'],
+    zone:         2,
+    name:	        "Pic de Labas",
+    img:          "18.jpg",
+    difficulty:   1
+  },
+
 ]

@@ -1,4 +1,5 @@
 export { default as Map } from "./map/Map"
+export { default as MapMarker } from "./map-marker/MapMarker"
 export { default as Side } from "./side/Side"
 export { default as Menu } from "./menu/Menu"
 export { default as List } from "./list/List"

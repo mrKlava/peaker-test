@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ListItem } from '..'
+import { ListItem } from '../index'
 
 import "./list.scss"
 import { DestinationContext } from '../../App'
@@ -10,11 +10,7 @@ function List() {
   return (
     <div className='list'>
       <div className='list-inner'>
-        {
-          display.map((item) => {
-            return <ListItem key={item.id} item={item} />
-          })
-        }
+        { display.map((item) => <ListItem key={item.id} item={item} />) }
       </div>
     </div>
   )

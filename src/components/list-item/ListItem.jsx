@@ -3,16 +3,19 @@ import { DestinationContext } from '../../App'
 
 function ListItem({item}) {
 
-  const {hovered, setHovered} = useContext(DestinationContext)
+  const {hovered, setHovered, setSelected} = useContext(DestinationContext)
   
   const handleEnter = () => setHovered(item.id) 
   const handleLeave = () => setHovered(null)
+  const handleClick = () => setSelected(item)
 
+  const className = hovered === item.id ? "list-item selected" : "list-item"
 
   return (
-    <div className='list-item'
+    <div className={className}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
+        onClick={handleClick}
     >
       <h3 className='list-item_title'>{item.name}</h3>
       <div className="list-item_image">
