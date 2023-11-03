@@ -1,4 +1,5 @@
-import React from 'react'
+import { useState } from 'react'
+import { Filter } from '../index'
 
 import "./menu.scss"
 
@@ -6,7 +7,9 @@ function Menu() {
   return (
     <div className='menu'>
       <h1 className='title'>Peaker</h1>
-        <div className='menu-form'> FORM </div>
+
+      <Filter />
+
     </div>
   )
 }
